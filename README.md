@@ -4,4 +4,4 @@
 
 * Extract audio files with `make recordings`
 * Create and train with `make`
-* To generate new sentences `make new\_sentences`
+* To generate new sentences `make new_sentences`
