@@ -1,0 +1,34 @@
+#! /bin/bash
+
+if [[ $# -le 1 ]]; then
+    echo "$0 repertoire modele: cree des modeles uniformes dans le repertoire"
+    exit
+fi
+
+target=$1
+list=$2
+proto=$target/proto
+
+if [[ ! -f $list ]]
+then
+    echo "Fichier '$list' manquant (liste des modeles)"
+    exit
+fi
+
+if [[ ! -e $proto ]]
+then
+    echo "Fichier '$proto' manquant (HMM prototype)"
+    exit
+fi
+
+touch $target/hmmdefs
+for f in $(cat $list)
+do
+    sed -e s/proto/$f/ $proto >> $target/hmmdefs;
+done
+
+echo "~o <MFCC_0_D_A> <VecSize> 39" > $target/macros
+cat $target/vFloors >> $target/macros
+
+echo "Creation des modeles uniformes dans '$target'"
+

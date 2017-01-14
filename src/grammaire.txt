@@ -1,0 +1,2 @@
+$chiffre = un | deux | trois | quatre |cinq;
+( calculer $chiffre (plus | moins) $chiffre )

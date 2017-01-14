@@ -1,0 +1,8 @@
+calculer
+cinq
+deux
+moins
+plus
+quatre
+trois
+un
