@@ -1,2 +1,4 @@
-$chiffre = un | deux | trois | quatre |cinq;
-( calculer $chiffre (plus | moins) $chiffre )
+$chiffre = un | deux | trois | quatre |cinq | six | sept | huit | neuf;
+$politessedebut = bonjour | salut | calculatrice ;
+$politessefin = merci;
+( [ $politessedebut ] (calculer|calcule) [ moi ] $chiffre (plus | moins | fois) $chiffre [ $politessefin ] )

@@ -31,15 +31,15 @@ $(OUT_DIR)/hmm0/hmmdefs: $(OUT_DIR)/hmm0/proto
 
 $(OUT_DIR)/hmm1/hmmdefs: $(OUT_DIR)/hmm0/hmmdefs | $(OUT_DIR)/hmm1
 	$(BIN_DIR)/HERest -C $(SRC_DIR)/mfccda.conf -I $(OUT_DIR)/phones.mlf -t 250.0 150.0 1000.0 \
-	    -H $(OUT_DIR)/hmm0/hmmdefs -M $(OUT_DIR)/hmm1 $(SRC_DIR)/monophones.txt $(TRAIN_DIR)/*.mfc
+	    -H $(OUT_DIR)/hmm0/hmmdefs -H $(OUT_DIR)/hmm0/macros -M $(OUT_DIR)/hmm1 $(SRC_DIR)/monophones.txt $(TRAIN_DIR)/*.mfc
 
 $(OUT_DIR)/hmm2/hmmdefs: $(OUT_DIR)/hmm1/hmmdefs | $(OUT_DIR)/hmm2
 	$(BIN_DIR)/HERest -C $(SRC_DIR)/mfccda.conf -I $(OUT_DIR)/phones.mlf -t 250.0 150.0 1000.0 \
-	    -H $(OUT_DIR)/hmm1/hmmdefs -M $(OUT_DIR)/hmm2 $(SRC_DIR)/monophones.txt $(TRAIN_DIR)/*.mfc
+	    -H $(OUT_DIR)/hmm1/hmmdefs -H $(OUT_DIR)/hmm1/macros -M $(OUT_DIR)/hmm2 $(SRC_DIR)/monophones.txt $(TRAIN_DIR)/*.mfc
 
 $(OUT_DIR)/hmm3/hmmdefs: $(OUT_DIR)/hmm2/hmmdefs | $(OUT_DIR)/hmm3
 	$(BIN_DIR)/HERest -C $(SRC_DIR)/mfccda.conf -I $(OUT_DIR)/phones.mlf -t 250.0 150.0 1000.0 \
-	    -H $(OUT_DIR)/hmm2/hmmdefs -M $(OUT_DIR)/hmm3 $(SRC_DIR)/monophones.txt $(TRAIN_DIR)/*.mfc
+	    -H $(OUT_DIR)/hmm2/hmmdefs -H $(OUT_DIR)/hmm2/macros -M $(OUT_DIR)/hmm3 $(SRC_DIR)/monophones.txt $(TRAIN_DIR)/*.mfc
 
 update_mfc: $(OUT_DIR)/list.scp | $(RECORDINGS_DIR)
 	$(BIN_DIR)/HCopy -T 1 -C $(SRC_DIR)/mfcc.conf -S $(OUT_DIR)/list.scp
