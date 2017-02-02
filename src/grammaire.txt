@@ -1,9 +1,7 @@
 $chiffre = un | deux | trois | quatre |cinq | six | sept | huit | neuf | dix | onze | douze | treize | quatorze | quinze | seize;
 $silteplait = s il te plait;
-$politessedebut = bonjour | salut | calculatrice | $silteplait | ecoute | aide moi ;
+$politessedebut = salut | calculatrice | $silteplait | ecoute | aide moi | bonjour;
 
 $politessefin = merci | adieu | fin | geoffrey | cordialement | amicalement | respectueusement | faineant  | maintenant | rapidement | tout de suite | beau gosse | charbon;
 
-( [ $politessedebut ] (calculer|calcule) [ moi ] [ bien ] $chiffre (plus | moins | fois) $chiffre [ $politessefin ] )
-
-
+( SENT-START [ $politessedebut ] (calculer|calcule) [ moi ] [ bien ] $chiffre (plus | moins | fois) $chiffre [ $politessefin ] SENT-END )
