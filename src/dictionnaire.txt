@@ -6,14 +6,44 @@ cinq        s un k sp
 deux        d eu sp
 fois	    f w a sp
 huit	    y i t sp
-merci	    m er r s i sp
+merci	    m eh r s i sp
 moi	    m w a sp
 moins       m w un sp
 neuf	    n eo f sp
 plus        p l y s sp
 quatre      k a t r sp
 salut	    s a l y sp
-sept        s eh t sp
+sept        s er t sp
 six	    s i s sp
 trois       t r w a sp
 un          un sp
+dix	    d i s
+onze        on z 
+douze	    d ou z
+treize      t r eh z 
+quatorze    k a t o r z 
+quinze      k un z
+seize       s eh z
+s	    s
+il          i l
+te	    t eu
+plait 	    p l eh
+ecoute	    er k ou t
+aide	    eh d
+adieu	    a d i eo
+fin	    f un
+geoffrey    j o f r eh
+cordialement k o r d i a l eu m an
+amicalement  a m i k a l eu m an
+respectueusement  r er s p eh k t y eu z eu m an
+faineant  f er n eh an
+maintenant  m un t eu n an
+rapidement  r a p i d eu m an
+tout	t ou 
+de	d e
+suite	s y i t
+charbon sh a r b on
+beau	b o
+gosse   g o s
+bien  b i un
+
