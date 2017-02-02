@@ -2,6 +2,6 @@
 
 ## Makefile rules
 
-* Extract audio files with `make recordings`
 * Create and train with `make`
-* To generate new sentences `make new_sentences`
+* Compare recognition with ground truth with `make results`
+* To generate new sentences to read: `make new_sentences`
